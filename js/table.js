@@ -12,10 +12,8 @@ async function mostrarTabla() {
   }
   ).then(function (r) {
     if (!r.ok) {
-      console.log("error");
     }
     else {
-      console.log("todo ok");
       return r.json();
     }
   }
@@ -96,7 +94,6 @@ async function addClass() {
 
   }).then(function (r) {
     if (!r.ok) {
-      console.log("error");
     }
     else {
       mostrarTabla();
@@ -290,10 +287,8 @@ function deleteTable() {
   }
   ).then(function (r) {
     if (!r.ok) {
-      console.log("error");
     }
     else {
-      console.log("ok delete");
       return r.json();
     }
   }
@@ -482,10 +477,8 @@ async function autoActualizar(jsonCache, textointervalo) {
   }
   ).then(function (r) {
     if (!r.ok) {
-      console.log("error");
     }
     else {
-      console.log("todo ok");
       return r.json();
     }
   }
